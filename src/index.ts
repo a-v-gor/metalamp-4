@@ -1,5 +1,7 @@
-import jQueryFactory from 'jquery';
-const jQuery = jQueryFactory(window, true);
+import './index.scss';
+import MyPlugin from './myPlugin.jQuery';
 
-console.log("Hello This is a Typescript project.");
-console.log(jQuery);
+const myPlugin = new MyPlugin();
+const myNewPlugin = new MyPlugin('It\'s Ok');
+myPlugin.sayHi();
+myNewPlugin.sayHi();
